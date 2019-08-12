@@ -19,9 +19,13 @@ To install
 
 To use
 
-    $ hidden
+    $ python hidden.py
     Note: *******
     Adding note to ./notes.org...
+
+I made an alias in my `~/.zshrc`
+
+    $ alias note="python hidden.py"
 
 To view your note
 
