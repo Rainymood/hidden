@@ -27,9 +27,6 @@ except ImportError:
 def add_note(note, filepath):
     """Writes note to file at filepath. 
 
-    Notes: 
-        File has to exist. If the file does not exist everything breaks.
-
     Example format: 
         [2019-08-12 Mon 11:16] 
         Lorem ipsum dolor sit amet. 
@@ -38,7 +35,6 @@ def add_note(note, filepath):
     content = date_org_fmt + "\n" + note + "\n\n"
 
     with open(filepath, "a") as f:
-        # click.echo(f"Adding note to {filepath.split('.')[0]} list...")
         click.echo(f"Adding note to ./notes.org...")
         f.write(content)
 
