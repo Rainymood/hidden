@@ -7,9 +7,9 @@ Try **hidden** now!
 
 ## Installation
 
-To install 
+To install  
 
-    git clone
+    git clone https://github.com/Rainymood/hidden
     cd hidden/
     python hidden.py
 
