@@ -1,5 +1,7 @@
 # Hidden
 
+![](./img.gif)
+
 Are you in an open office? Do you want some privacy when you are writing a note
 to yourself? 
 
