@@ -35,12 +35,18 @@ def add_note(note, filepath):
     content = date_org_fmt + "\n" + note + "\n\n"
 
     with open(filepath, "a") as f:
-        click.echo(f"Adding note to ./notes.org...")
+        click.echo(
+            f"Adding note to ./{datetime.today().strftime('%Y-%m-%d')}-notes.org..."
+        )
         f.write(content)
 
 
 @click.command()
-@click.option("--filepath", default="./notes.org", help="Path to file.")
+@click.option(
+    "--filepath",
+    default=f"./{datetime.today().strftime('%Y-%m-%d')}-notes.org",
+    help="Path to file.",
+)
 def main(filepath):
     note = getpass(prompt="Note: ")
     add_note(note, filepath)
